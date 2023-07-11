@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Trang của Bảo Hân</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('BH.jpeg');
+  min-height: 100%;
+}
+</style>
+</head>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content --> <div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Han Pham</b></h1>
+    <p>Hana</p>
+    <img src="BH.jpeg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="BH.jpeg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+  </header>
+
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>About</h2>
+    <hr class="w3-opacity">
+    <p>Bảo Hân sanh thần vào ngày 16 tháng 07 năm 2006. Cung ♋️, đây để kể cho nghe, bữa thứ 7 t xui thấy mẹ luôn, mà cái tình cảnh éo le cmn luôn. Thứ 7 là chiều 17h30 t đi học, mà chiều đó có chị họ t ra coi pháo hoa, cái rủ t đi chơi luôn, t xin thầy nghỉ học. Lúc đó cũng còn sớm, t đi tắm biển với chị họ ta với mấy cậu nữa. Thì đi xe máy lên, bỏ hết chìa khoá xe vô 1 túi rồi xuống tắm, mà nhà t quên đéo gửi tủ mà để trên bờ cát vậy đó, tắm vui vl vui bao nhiêu thì về … bấy nhiêu. Đ*m* lên mất cái túi chìa khoá xe+2 cái áo bay màu, hên là không có tiền vs đt, cái t chạy ra xem còn không hên là còn. Đi 3 xe thì 2 chiếc AB 1 chiếc xe điện của t, 2 chiếc AB có chìa dự phòng còn của t có 1 chìa thoooooi. Xong dắt bộ lòi le về, mk t k dc đi coi pháo hoa luôn =‘))) Mà về rồi cỡ 18h30 chỗ tắm biển họ gọi cho cậu ta kêu tìm được túi rồi, cậu ta ra lấy thì y chang cái túi nớ.  Đ*o mất gì hết mất mỗi CHÌA KHOÁ XE TAOOOOO.
+    </p>
+        
+  <!-- End About Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contact Me</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Da Nang, Viet Nam</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>+84-905-417-156
+      </p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: hanpham.dn.2006@gmail.com
+
+
+      </p>
+    </div>
+    
+
+  
+  <!-- Footer -->
+  
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
