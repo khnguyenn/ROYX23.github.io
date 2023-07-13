@@ -269,6 +269,10 @@ a:focus {
 	.slide--layout-10 .slide__figure:nth-child(2) {grid-area: 2 / 17 / 10 / 21;}
 	.slide--layout-10 .slide__figure:nth-child(3) {grid-area: 15 / 5 / 22 / 9; }
 	.slide--layout-10 .slide__figure:nth-child(4) {grid-area: 11 / 12 / 21 / 18; }
+	.slide--layout-11 .slide__figure:first-child {grid-area: 2 / 2 / 15 / 10;}
+	.slide--layout-11 .slide__figure:nth-child(2) {grid-area: 22 / 1 / 15 / 5;}
+	.slide--layout-11 .slide__figure:nth-child(3) {grid-area: 15 / 6 / 22 / 10; }
+	.slide--layout-11 .slide__figure:nth-child(4) {grid-area: 2 / 13 / 23 / 20; }
 	
 	.slide--current {
 		pointer-events: auto;
