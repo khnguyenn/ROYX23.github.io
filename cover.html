@@ -5,8 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>MEMORIES - A Journey Through Time</title>
 	<link rel="icon" type="image/x-icon" href="/logo.png">
-	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/base.css"> -->
 	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+		* {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
 		.cover-page {
 			height: 100vh;
 			display: flex;
@@ -14,17 +18,20 @@
 			justify-content: center;
 			flex-direction: column;
 			text-align: center;
-			background-color: #f1f1f1;
+			/* background-color: #f1f1f1; */
+			margin: 0 250px;
 		}
 
 		.cover-page__title {
 			font-size: 48px;
 			font-weight: bold;
 			margin-bottom: 16px;
+		    color: #e67e22;
 		}
 
 		.cover-page__description {
 			font-size: 24px;
+			color: #63AF92;
 		}
 
 		.arrow-link {
@@ -48,12 +55,53 @@
 			height: 24px;
 			fill: #333;
 		}
+		.cover-page__description_cotent > p {
+			font-size: large;
+			color: #FAE1CD;
+		}
+		p {
+			font-size: 20px;
+			color: #732E06;
+			font-weight: bold;
+		}
+		#logo {
+			margin-top: 10px;
+			width: 200px;
+			height: 100px;
+		}
+		.content{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+		@media(max-width:1050px) {
+			.cover-page {
+				margin: 0;
+			}
+			p {
+				font-size: 15px;
+			}
+		}
 	</style>
 </head>
 <body>
 	<div class="cover-page">
 		<h1 class="cover-page__title">MEMORIES</h1>
-		<p class="cover-page__description">A Journey Through Time</p>
+		<p class="cover-page__description"><i>|PRE ALBUM MEMORY|</i> </p>
+		<div class="cover-page__description_content">
+			<p class="Content">Kỉ niệm là thứ duy nhất và sau cùng còn ở lại.</p>
+			
+			<p class="Content">Khi những mảnh nhỏ kí ức được góp nhặt, đủ để tua ngược thành một thước phim, đó có lẽ là lúc mà chúng ta đã đi qua quá nhiều điều, trải qua quá nhiều cảm xúc và là lúc chúng ta có thể dựng lên được cái kết mình mong muốn cho bộ phim <p style="color : #F17326;">“Hai Ba và 1000 ngày ở Phan”.</p></p>
+			
+			<p class="Content">Đây có lẽ là phần đặc biệt nhất trong chiếc web này. Đúng như cái tên mà chúng ta đặt Royx23 - Record Of Youth chiếc online album này có lẽ sẽ là chiếc máy quay chạy bằng cơm khi tua ngược lại quãng thời gian chúng ta dành cho Hai Ba. Không chính xác và đầy đủ nhất nhưng lại là những mục Highlight đẹp đẽ nhất.</p></div>
+		<img src ="/logo2.png" id ="logo"/>
 	</div>
 
 	<a href="memories.html" class="arrow-link">
