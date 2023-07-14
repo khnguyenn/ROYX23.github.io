@@ -240,7 +240,7 @@ a:focus {
 	.slide--layout-2 .slide__figure:nth-child(2) {grid-area: 2 / 12 / 9 / 18;}
 	.slide--layout-2 .slide__figure:nth-child(3) {grid-area: 10 / 13 / 21 / 21; }
 	.slide--layout-3 .slide__figure:first-child {grid-area: 2/ 6 / 9 / 10;}
-	.slide--layout-3 .slide__figure:nth-child(2) {grid-area: 2/ 14 / 9 / 21;}
+	.slide--layout-3 .slide__figure:nth-child(2) {grid-area: 2/ 14 / 10 / 21;}
 	.slide--layout-3 .slide__figure:nth-child(3) {grid-area: 10 / 2 / 23 / 10; }
 	.slide--layout-3 .slide__figure:nth-child(4) {grid-area: 10 / 12 / 20 / 18; }
 	.slide--layout-4 .slide__figure:first-child {grid-area: 1 / 3 / 10 / 10;}
@@ -257,7 +257,7 @@ a:focus {
 	.slide--layout-7 .slide__figure:nth-child(2) {grid-area: 3 / 12 / 10 / 18;}
 	.slide--layout-7 .slide__figure:nth-child(3) {grid-area: 11 / 4 / 21 / 9; }
 	.slide--layout-7 .slide__figure:nth-child(4) {grid-area: 13 / 12 / 21 / 18; }
-	.slide--layout-8 .slide__figure:first-child {grid-area: 1 / 3 / 10 / 10;}
+	.slide--layout-8 .slide__figure:first-child {grid-area: 2 / 3 / 11 / 10;}
 	.slide--layout-8 .slide__figure:nth-child(2) {grid-area: 2 / 13 / 22 / 20;}
 	.slide--layout-8 .slide__figure:nth-child(3) {grid-area: 12 / 2 / 21 / 9; }
 	/* .slide--layout-8 .slide__figure:nth-child(4) {grid-area: 14/ 13 / 21 / 18; } */
