@@ -6,6 +6,11 @@
 		<title>MEMORIES</title>
 		<link rel="icon" type="image/x-icon" href="/logo.png">
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("");</script>
 	</head>
 	<body class="loading">
@@ -28,6 +33,20 @@
 				<header class="codrops-header">
 					<a href="/index.html" id="button_header"><h1 class="codrops-header__title">THE ROYX23.</h1></a>
 				</header>
+				<div class="nav-bar">
+						
+					<div class="navigation">
+					  <div class="nav-items">
+						<i class="uil uil-times nav-close-btn"></i>
+						<a href="memories.html"><i class="uil uil-home"></i> 2021-2022</a>
+						<a href="memories2.html" id="explore-link"><i class="uil uil-compass"></i> 2022-2023</a>
+						<a href="#band"><i class="uil uil-info-circle"></i>2023-2024</a>
+						
+		  
+					  </div>
+					</div>
+					<i class="uil uil-apps nav-menu-btn"></i>
+				  </div>
 				<div class="slide slide--layout-1 slide--current">
 					<figure class="slide__figure">
 						<div class="slide__figure-inner">
@@ -1285,5 +1304,21 @@
 		<script src="js/TweenMax.min.js"></script>
 		<script src="js/demo.js"></script>
 		<script src="demo.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <script>
+	// Responsive navigation menu toggle
+  const menuBtn = document.querySelector(".nav-menu-btn");
+	const closeBtn = document.querySelector(".nav-close-btn");
+	const navigation = document.querySelector(".navigation");
+	
+	menuBtn.addEventListener("click", () => {
+	  navigation.classList.add("active");
+	});
+	
+	closeBtn.addEventListener("click", () => {
+	  navigation.classList.remove("active");
+	});
+  </script>
 	</body>
 </html>
