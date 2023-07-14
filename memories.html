@@ -85,7 +85,7 @@
 					</figure>
 					<figure class="slide__figure">
 						<div class="slide__figure-inner">
-							<div class="slide__figure-img" style="background-image: url(img/6.jpeg)"></div>
+							<div class="slide__figure-img" style="background-image: url(img/6.jpg)"></div>
 							<div class="slide__figure-reveal"></div>
 						</div>
 						<figcaption>
@@ -119,7 +119,7 @@
 					</figure>
 					<figure class="slide__figure">
 						<div class="slide__figure-inner">
-							<div class="slide__figure-img" style="background-image: url(img/9.jpeg)"></div>
+							<div class="slide__figure-img" style="background-image: url(img/9.jpg)"></div>
 							<div class="slide__figure-reveal"></div>
 						</div>
 						<figcaption>
@@ -133,7 +133,7 @@
 				<div class="slide slide--layout-3">
 					<figure class="slide__figure">
 						<div class="slide__figure-inner">
-							<div class="slide__figure-img" style="background-image: url(img/13.jpg)"></div>
+							<div class="slide__figure-img" style="background-image: url(img/13.JPG)"></div>
 							<div class="slide__figure-reveal"></div>
 						</div>
 						<figcaption>
@@ -143,7 +143,7 @@
 					</figure>
 					<figure class="slide__figure">
 						<div class="slide__figure-inner">
-							<div class="slide__figure-img" style="background-image: url(img/11.jpeg)"></div>
+							<div class="slide__figure-img" style="background-image: url(img/11.JPG)"></div>
 							<div class="slide__figure-reveal"></div>
 						</div>
 						<figcaption>
@@ -153,7 +153,7 @@
 					</figure>
 					<figure class="slide__figure">
 						<div class="slide__figure-inner">
-							<div class="slide__figure-img" style="background-image: url(img/12.jpeg)"></div>
+							<div class="slide__figure-img" style="background-image: url(img/12.jpg)"></div>
 							<div class="slide__figure-reveal"></div>
 						</div>
 						<figcaption>
@@ -331,7 +331,7 @@
 					<span class="slide__number slide__number--left">15</span>
 					<span class="slide__number slide__number--right">16</span>
 				</div>
-				<div class="slide slide--layout-8">
+				<div id ="end" class="slide slide--layout-8">
 					<figure class="slide__figure">
 						<div class="slide__figure-inner">
 							<div class="slide__figure-img" style="background-image: url(img/18.jpg)"></div>
@@ -350,6 +350,7 @@
 						<figcaption>
 							<h3 class="slide__figure-title">Shine Toả Sáng Tài Năng</h3>
 							<p class="slide__figure-description">29/07/2022</p>
+							<a class="tran" href="javascript:void(0);" onclick="loadPage()"style="font-family: 'Courier New', monospace; font-size: 18px; position: fixed; margin-top:20px; right: 20px;">Hồi tiếp theo.</a>
 						</figcaption>
 					</figure>
 					<figure class="slide__figure">
@@ -360,6 +361,8 @@
 						<figcaption>
 							<h3 class="slide__figure-title">Shine Toả Sáng Tài Năng</h3>
 							<p class="slide__figure-description">29/07/2022</p>
+							
+							
 						</figcaption>
 					</figure>
 					<figure class="slide__figure">
@@ -367,15 +370,55 @@
 							<div class="slide__figure-img">
 								<h3 class="slide__figure-title" style="font-family: 'Courier New', monospace; font-size: 24px;">Và chúng tớ</h3>
 								<p class="slide__figure-description" style="font-family: 'Courier New', monospace; font-size: 18px;">đã qua năm lớp 10 như thế đấy.</p>
+								<div class="slide__figure-overlay">
+									<a class="tran" href="javascript:void(0);" onclick="loadPage()">Hồi tiếp theo.</a>
+								</div>
 							</div>
 							<div class="slide__figure-reveal"></div>
 						</div>
 					</figure>
 					
 					
+					
 					<span class="slide__number slide__number--left">17</span>
 					<span class="slide__number slide__number--right">18</span>
+					
 				</div>
+				<style>
+					.loading {
+					  display: none;
+					  position: fixed;
+					  top: 0;
+					  left: 0;
+					  width: 100%;
+					  height: 100%;
+					  background-color: #fff;
+					  z-index: 9999;
+					  opacity: 0.8;
+					}
+				  
+					.loading-text {
+					  position: absolute;
+					  top: 50%;
+					  left: 50%;
+					  transform: translate(-50%, -50%);
+					  font-size: 24px;
+					}
+				  </style>
+				  
+				  <div class="loading" id="loading">
+					<div class="loading-text">Chúng ta sau này</div>
+				  </div>
+				  
+				  <script>
+					function loadPage() {
+					  var loading = document.getElementById("loading");
+					  loading.style.display = "block";
+					  setTimeout(function () {
+						window.location.href = "memories2.html";
+					  }, 2000); // Delay for 2 seconds before navigating to memories2.html
+					}
+				  </script>
 				<!-- <div class="slide slide--layout-5">
 					<figure class="slide__figure">
 						<div class="slide__figure-inner">
@@ -1097,6 +1140,7 @@
 						<svg class="icon icon--nav"><use xlink:href="#icon-nav"></use></svg>
 					</button>
 				</nav>
+				
 				<!-- navigation -->
 				<nav class="nav">
 					<button class="nav__button">
@@ -1231,6 +1275,7 @@
 						
 					</div>
 				</nav>
+				
 				<!-- little sides -->
 				<div class="slideshow__indicator"></div>
 				<div class="slideshow__indicator"></div>
@@ -1240,7 +1285,5 @@
 		<script src="js/TweenMax.min.js"></script>
 		<script src="js/demo.js"></script>
 		<script src="demo.js"></script>
-
-
 	</body>
 </html>

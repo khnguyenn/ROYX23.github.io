@@ -521,3 +521,21 @@ a:focus {
 		line-height: 1;
 	}
 }
+@media screen and (max-width: 767px) {
+	#slide__figure-description {
+	  position: relative;
+	}
+  
+	.tran {
+	  position: absolute;
+	  margin-top:  10px;
+	  right: 20px;
+	  font-family: 'Courier New', monospace;
+	  font-size: 14px;
+	  z-index: 1;
+	}
+	.tran:hover{
+		color:#fbaf5d;
+
+  }
+}
