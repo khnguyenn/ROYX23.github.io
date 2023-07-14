@@ -151,21 +151,19 @@
 	  
 		// Add event listener for SVG keyframe animation end
 		document.getElementById("text").addEventListener("animationend", function() {
-		  // Show the content and logo elements one after another with shorter delay
+		  // Show the content and logo elements one after another
 		  var paragraphs = document.querySelectorAll(".Content, .Content1, p");
-		  var delay = 400; // Adjust the delay (200 milliseconds = 0.2 second)
 		  paragraphs.forEach(function(paragraph, index) {
 			setTimeout(function() {
 			  paragraph.style.opacity = "1";
-			}, index * delay);
+			}, index * 500); // Adjust the delay (500 milliseconds = 0.5 second)
 		  });
 	  
 		  var logo = document.getElementById("logo");
 		  setTimeout(function() {
 			logo.style.opacity = "1";
-		  }, paragraphs.length * delay);
+		  }, paragraphs.length * 500); // Adjust the delay based on the number of paragraphs
 		});
 	  </script>
-	  
 </body>
 </html>
