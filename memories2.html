@@ -909,12 +909,21 @@
 
 // Event listener for touchstart event
 document.addEventListener("touchstart", function(event) {
+  var targetElement = event.target;
+
   // Check if the touch event occurred with one touch point
   if (event.touches.length === 1) {
-    askUser();
+    // Check if the touch event is not on the navigation menu button or its child elements
+    var navigationButton = document.querySelector('.nav-menu-btn');
+    var navBar = document.querySelector('.nav-bar');
+    
+    // Check if the touch event is not on the navigation bar or its child elements
+    if (targetElement !== navigationButton && !navigationButton.contains(targetElement) &&
+        targetElement !== navBar && !navBar.contains(targetElement)) {
+      askUser();
+    }
   }
 });
-
 
 
 
