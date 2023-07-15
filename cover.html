@@ -142,23 +142,24 @@
 		Your browser does not support the audio element.
 	  </audio>
 	  
-	  <script>
-		function startAudio() {
-		  var audio = document.getElementById('audio');
-		  audio.play();
-	  
-		  setTimeout(stopAudio, 3500); // Stop the audio after 4 seconds (4000 milliseconds)
-		}
-	  
-		function stopAudio() {
-		  var audio = document.getElementById('audio');
-		  audio.pause();
-		  audio.currentTime = 0;
-		}
-	  
-		// Call startAudio() when the page loads
-		window.addEventListener('load', startAudio);
-	  </script>
+	 <script>
+  function startAudio() {
+    var audio = document.getElementById('audio');
+    audio.play();
+
+    setTimeout(stopAudio, 3500); // Stop the audio after 4 seconds (4000 milliseconds)
+  }
+
+  function stopAudio() {
+    var audio = document.getElementById('audio');
+    audio.pause();
+    audio.currentTime = 0;
+  }
+
+  // Call startAudio() when the page loads
+  window.addEventListener('DOMContentLoaded', startAudio);
+  window.addEventListener('load', startAudio); // Additional event listener for mobile devices
+</script>
 	  
 
 	<a href="memories.html" class="arrow-link">
