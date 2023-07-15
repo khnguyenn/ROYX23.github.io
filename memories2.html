@@ -882,6 +882,53 @@
 	});
   </script>
 
+		<script>
+	function askUser() {
+  var answer = confirm("Cậu cóa muốn trở về hồi đầu khum!?");
+
+  if (answer) {
+    // User wants to go back to the beginning
+    // Redirect to "memories.html"
+    window.location.href = "memories.html";
+  } else {
+    // User doesn't want to go back to the beginning
+    var message = document.createElement("div");
+    message.textContent = "Chúc cậu một ngày mới vui vẻee";
+    message.style.position = "fixed";
+    message.style.top = "10px";
+    message.style.left = "10px";
+    message.style.padding = "10px";
+    message.style.background = "#f9f9f9";
+    message.style.border = "1px solid #ddd";
+    document.body.appendChild(message);
+    setTimeout(function() {
+      document.body.removeChild(message);
+    }, 3000);
+  }
+}
+
+// Event listener for touchstart event
+document.addEventListener("touchstart", function(event) {
+  // Check if the touch event occurred with one touch point
+  if (event.touches.length === 1) {
+    askUser();
+  }
+});
+
+
+
+
+
+// Event listener for keydown event
+document.addEventListener("keydown", function(event) {
+  // Check if the left arrow key is pressed (keyCode 37)
+  if (event.keyCode === 37) {
+    askUser();
+  }
+});
+
+	</script>
+
 
 	</body>
 </html>
