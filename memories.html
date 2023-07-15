@@ -6,6 +6,11 @@
 		<title>MEMORIES</title>
 		<link rel="icon" type="image/x-icon" href="/logo.png">
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("");</script>
 	</head>
 	<body class="loading">
@@ -37,6 +42,20 @@
 						<a href="">2023-2024</a>
 					</div>
 				</header>
+				<div class="nav-bar">
+						
+					<div class="navigation">
+					  <div class="nav-items">
+						<i class="uil uil-times nav-close-btn"></i>
+						<a href="memories.html"><i class="uil uil-home"></i> 2021-2022</a>
+						<a href="memories2.html" id="explore-link"><i class="uil uil-compass"></i> 2022-2023</a>
+						<a href="#band"><i class="uil uil-info-circle"></i>2023-2024</a>
+						
+		  
+					  </div>
+					</div>
+					<i class="uil uil-apps nav-menu-btn"></i>
+				  </div>
 				<div class="slide slide--layout-1 slide--current">
 					<figure class="slide__figure">
 						<div class="slide__figure-inner">
@@ -142,7 +161,7 @@
 				<div class="slide slide--layout-3">
 					<figure class="slide__figure">
 						<div class="slide__figure-inner">
-							<div class="slide__figure-img" style="background-image: url(img/13.jpg)"></div>
+							<div class="slide__figure-img" style="background-image: url(img/13.JPG)"></div>
 							<div class="slide__figure-reveal"></div>
 						</div>
 						<figcaption>
@@ -152,7 +171,7 @@
 					</figure>
 					<figure class="slide__figure">
 						<div class="slide__figure-inner">
-							<div class="slide__figure-img" style="background-image: url(img/11.jpg)"></div>
+							<div class="slide__figure-img" style="background-image: url(img/11.JPG)"></div>
 							<div class="slide__figure-reveal"></div>
 						</div>
 						<figcaption>
@@ -359,7 +378,7 @@
 						<figcaption>
 							<h3 class="slide__figure-title">Shine Toả Sáng Tài Năng</h3>
 							<p class="slide__figure-description">29/07/2022</p>
-							<a class="tran" href="javascript:void(0);" onclick="loadPage()"style="font-family: 'Courier New', monospace; font-size: 28px; position: fixed; margin-top:25px; margin-left:100px ; color : black; text-align : center; :hover : red;">Hồi tiếp theo.</a>
+							<a class="tran" href="javascript:void(0);" onclick="loadPage()"style="font-family: 'Courier New', monospace; font-size: 18px; position: fixed; margin-top:20px; right: 20px;">Hồi tiếp theo.</a>
 						</figcaption>
 					</figure>
 					<figure class="slide__figure">
@@ -377,10 +396,10 @@
 					<figure class="slide__figure">
 						<div class="slide__figure-inner">
 							<div class="slide__figure-img">
-								<h3 class="slide__figure-title" style="font-family: 'Courier New', monospace; font-size: 24px;"></h3>
-								<p class="slide__figure-description" style="font-family: 'Courier New', monospace; font-size: 18px;"></p>
+								<h3 class="slide__figure-title" style="font-family: 'Courier New', monospace; font-size: 24px;">Và chúng tớ</h3>
+								<p class="slide__figure-description" style="font-family: 'Courier New', monospace; font-size: 18px;">đã qua năm lớp 10 như thế đấy.</p>
 								<div class="slide__figure-overlay">
-									<a class="tran" href="javascript:void(0);" onclick="loadPage()">Hồi tiếp theo</a>
+									<a class="tran" href="javascript:void(0);" onclick="loadPage()">Hồi tiếp theo.</a>
 								</div>
 							</div>
 							<div class="slide__figure-reveal"></div>
@@ -1181,7 +1200,7 @@
 
 						<a class="toc__item" href="#entry-6">
 							<span class="toc__item-page">06.</span>
-							<span class="toc__item-title">Ấn Phẩm</span>
+							<span class="toc__item-title">Ấn Phẩm Truyền Thông</span>
 						</a>
 
 						<a class="toc__item" href="#entry-7">
@@ -1189,7 +1208,7 @@
 							<span class="toc__item-title">Cuối Năm</span>
 						</a><a class="toc__item" href="#entry-1">
 							<span class="toc__item-page">08.</span>
-							<span class="toc__item-title">Chia Tay Thành Viên Đầu</span>
+							<span class="toc__item-title">Chia Tay Thành Viên Đầu Tiên</span>
 						</a>
 						<a class="toc__item" href="#entry-2">
 							<span class="toc__item-page">09.</span>
@@ -1294,5 +1313,21 @@
 		<script src="js/TweenMax.min.js"></script>
 		<script src="js/demo.js"></script>
 		<script src="demo.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <script>
+	// Responsive navigation menu toggle
+  const menuBtn = document.querySelector(".nav-menu-btn");
+	const closeBtn = document.querySelector(".nav-close-btn");
+	const navigation = document.querySelector(".navigation");
+	
+	menuBtn.addEventListener("click", () => {
+	  navigation.classList.add("active");
+	});
+	
+	closeBtn.addEventListener("click", () => {
+	  navigation.classList.remove("active");
+	});
+  </script>
 	</body>
 </html>
