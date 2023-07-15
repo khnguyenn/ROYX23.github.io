@@ -912,7 +912,7 @@ document.addEventListener("touchstart", function(event) {
   var targetElement = event.target;
 
   // Check if the touch event occurred with one touch point
-  if (event.touches.length === 1) {
+  if (event.touches.length === 2) {
     // Check if the touch event is not on the navigation menu button or its child elements
     var navigationButton = document.querySelector('.nav-menu-btn');
     var navBar = document.querySelector('.nav-bar');
