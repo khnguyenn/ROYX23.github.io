@@ -142,23 +142,29 @@
 		Your browser does not support the audio element.
 	  </audio>
 	  
-	 <script>
+	<script>
+  var audio = document.getElementById('audio');
+  var spriteStartTime = 0; // Start time of the audio sprite
+  var spriteEndTime = 4; // End time of the audio sprite in seconds
+  
   function startAudio() {
-    var audio = document.getElementById('audio');
     audio.play();
-
-    setTimeout(stopAudio, 3500); // Stop the audio after 4 seconds (4000 milliseconds)
+    audio.currentTime = spriteStartTime;
   }
-
+  
   function stopAudio() {
-    var audio = document.getElementById('audio');
     audio.pause();
-    audio.currentTime = 0;
+    audio.currentTime = spriteStartTime;
   }
-
-  // Call startAudio() when the page loads
-  window.addEventListener('DOMContentLoaded', startAudio);
-  window.addEventListener('load', startAudio); // Additional event listener for mobile devices
+  
+  function handleUserInteraction() {
+    // Add your code here to handle the user interaction
+    startAudio();
+    setTimeout(stopAudio, (spriteEndTime - spriteStartTime) * 1000);
+  }
+  
+  // Bind to user interaction event (e.g., "click", "touchend", "doubleclick", or "keydown")
+  window.addEventListener('click', handleUserInteraction);
 </script>
 	  
 
