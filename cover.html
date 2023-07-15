@@ -137,6 +137,30 @@
 			<p class="Content">Đây có lẽ là phần đặc biệt nhất trong chiếc web này. Đúng như cái tên mà chúng ta đặt Royx23 - Record Of Youth chiếc online album này có lẽ sẽ là chiếc máy quay chạy bằng cơm khi tua ngược lại quãng thời gian chúng ta dành cho Hai Ba. Không chính xác và đầy đủ nhất nhưng lại là những mục Highlight đẹp đẽ nhất.</p></div>
 		<img src ="/logo2.png" id ="logo"/>
 	</div>
+	<audio id="audio" autoplay>
+		<source src="write.mp3" type="audio/mpeg">
+		Your browser does not support the audio element.
+	  </audio>
+	  
+	  <script>
+		function startAudio() {
+		  var audio = document.getElementById('audio');
+		  audio.play();
+	  
+		  setTimeout(stopAudio, 3500); // Stop the audio after 4 seconds (4000 milliseconds)
+		}
+	  
+		function stopAudio() {
+		  var audio = document.getElementById('audio');
+		  audio.pause();
+		  audio.currentTime = 0;
+		}
+	  
+		// Call startAudio() when the page loads
+		window.addEventListener('load', startAudio);
+	  </script>
+	  
+	  
 
 	<a href="memories.html" class="arrow-link">
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
