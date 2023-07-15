@@ -65,23 +65,48 @@ var swiper = new Swiper(".bg-slider-thumbs", {
       var introPage = document.querySelector('.intro-page');
       var splashScreen = document.querySelector('.splash-screen');
       var audioElement = document.getElementById('intro-audio');
-  
+      var exploreLink = document.getElementById('explore-icon');
+      var memoriesLink = document.getElementById('contact-icon');
+    
       audioElement.addEventListener('canplaythrough', function() {
         // Commented out the autoplay for audioElement
         // audioElement.play();
       });
-  
-      setTimeout(function() {
+    
+      function hideIntroPage() {
         introPage.classList.add('hide');
+        audioElement.pause(); // Pause the audio when hiding the intro page
+      }
+    
+      exploreLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        hideIntroPage();
+        window.open('explore.html', '_blank');
+      });
+    
+      memoriesLink.addEventListener('click', function(event) {
+        hideIntroPage();
+        // You can replace 'cover.html' with the appropriate URL for your "Memories" page
+        window.open('cover.html', '_blank');
+      });
+    
+      window.addEventListener('focus', function() {
+        // Resume playing the audio when the window gains focus
+        audioElement.play();
+      });
+    
+      window.addEventListener('blur', function() {
+        // Pause the audio when the window loses focus
+        audioElement.pause();
+      });
+    
+      setTimeout(function() {
+        hideIntroPage();
         splashScreen.classList.add('hide');
         audioElement.play(); // Play the audio when hiding the intro page
       }, 4000);
-  
-      function hideIntroPage() {
-        introPage.classList.add('hide');
-        audioElement.play(); // Play the audio when hiding the intro page
-      }
     });
+    
  
     const cursor = document.querySelector(".cursor");
     var timeout;
