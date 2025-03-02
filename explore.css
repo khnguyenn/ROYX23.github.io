@@ -9,8 +9,8 @@
 }
 
 body {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(41, 9, 121) 35%, rgba(0,142,255,1) 100%);
+  background: rgb(182,45,45);
+  background: linear-gradient(84deg, rgba(182,45,45,1) 28%, rgba(235,139,73,1) 84%);
 }
 
 

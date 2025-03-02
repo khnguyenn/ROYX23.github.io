@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 <link rel="icon" href="/logo.png" type="image/icon type">
 
 <style>
@@ -19,6 +20,17 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   background-image: url('HP.jpeg');
   min-height: 100%;
 }
+
+
+.section_container {
+  display: flex;
+  margin-top: 10px;
+}
+.section_container > .text {
+  padding-left: 10px;
+}
+
+
 </style>
 </head>
 <body>
@@ -40,14 +52,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </div>
 </nav>
 
-<!-- Page Content --> <div class="w3-main w3-padding-large" style="margin-left:40%">
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
 
   <!-- Menu icon to open sidebar -->
   <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
 
   <!-- Header -->
   <header class="w3-container w3-center" style="padding:128px 16px" id="home">
-    <h1 class="w3-jumbo"><b>Phuc Nguyen</b></h1>
+    <h1 class="w3-jumbo"><b>Nguyễn Hồng Phúc</b></h1>
     <p>Phúc</p>
     <img src="HP.jpeg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
     <img src="HP.jpeg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
@@ -56,8 +69,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
     <h2>About</h2>
     <hr class="w3-opacity">
-    <p>Hồng Phúc sanh thần vào ngày 15 tháng 04 năm 2006. Cung Bạch Dương, lóng tánh, thích đá banh với chơi game thôi
-
+    <p>Hồng Phúc sanh thần vào ngày 15 tháng 04 năm 2006. Cung Bạch Dương, lóng tánh, thích đá banh với chơi game thôi. Thích màu đỏ.
     </p>
         
   <!-- End About Section -->
@@ -69,14 +81,26 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <hr class="w3-opacity">
 
     <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Da Nang, Viet Nam</p>
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>+84-905-417-156
-      </p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: nghongphuc1504@gmail.com
-
-
-
-      </p>
+      <div class="section_container">
+        <div class="icon"><a href="" ><i class='bx bxs-map bx-lg'></i></a></div>
+        <div class="text"><p>Da Nang,Viet Nam</p></div>
+      </div>
+      <div class="section_container">
+        <div class="icon"><a href="" ><i class='bx bxs-phone bx-lg'></i></a></div>
+        <div class="text"><p>0394774103</p></div>
+      </div>
+      <div class="section_container">
+        <div class="icon"><a href="" ><i class='bx bxs-envelope bx-lg'></i></a></div>
+        <div class="text"><p>nghongphuc1504@gmail.com</p></div>
+      </div>
+      <div class="section_container">
+        <div class="icon"><a href="https://www.facebook.com/your.phuc1504" ><i class='bx bxl-facebook bx-lg'></i></a></div>
+        <div class="text"><p>Facebook</p></div>
+      </div>
+      <div class="section_container">
+        <div class="icon"><a href="https://www.instagram.com/honggpuc_/" ><i class='bx bxl-instagram bx-lg'></i></a></div>
+        <div class="text"><p></p>Instagram</div>
+      </div>
     </div>
     
 
@@ -98,6 +122,8 @@ function closeNav() {
   document.getElementById("mySidebar").style.display = "none";
 }
 </script>
+
+<script src="https://kit.fontawesome.com/453319880c.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

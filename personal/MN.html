@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 <link rel="icon" href="/logo.png" type="image/icon type">
 
 <style>
@@ -19,6 +20,17 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   background-image: url('MN.jpg');
   min-height: 100%;
 }
+
+
+.section_container {
+  display: flex;
+  margin-top: 10px;
+}
+.section_container > .text {
+  padding-left: 10px;
+}
+
+
 </style>
 </head>
 <body>
@@ -48,8 +60,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   <!-- Header -->
   <header class="w3-container w3-center" style="padding:128px 16px" id="home">
-    <h1 class="w3-jumbo"><b>Ngoc Tran</b></h1>
-    <p>Mngoc</C>
+    <h1 class="w3-jumbo"><b>Trần Minh Ngọc</b></h1>
+    <p>Minhngok</p>
     <img src="MN.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
     <img src="MN.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
   </header>
@@ -58,7 +70,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <h2>About</h2>
     <hr class="w3-opacity">
     <p>Minh Ngọc sanh thần vào ngày 04 tháng 07 năm 2006. "Sống như thể ta còn thở"
-
     </p>
         
   <!-- End About Section -->
@@ -70,14 +81,27 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <hr class="w3-opacity">
 
     <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Da Nang, Viet Nam</p>
-      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>+84-792-240-024 
-      </p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: ngoctran0476@gmail.com
-
-
-
-      </p>
+      <div class="section_container">
+        <div class="icon"><a href="" ><i class='bx bxs-map bx-lg'></i></a></div>
+        <div class="text"><p>Da Nang,Viet Nam</p></div>
+      </div>
+      <div class="section_container">
+        <div class="icon"><a href="" ><i class='bx bxs-phone bx-lg'></i></a></div>
+        <div class="text"><p>0792240024</p></div>
+      </div>
+      <div class="section_container">
+        <div class="icon"><a href="" ><i class='bx bxs-envelope bx-lg'></i></a></div>
+        <div class="text"><p>ngoctran0476@gmail.com
+        </p></div>
+      </div>
+      <div class="section_container">
+        <div class="icon"><a href="https://www.facebook.com/profile.php?id=100024606863625" ><i class='bx bxl-facebook bx-lg'></i></a></div>
+        <div class="text"><p>Facebook</p></div>
+      </div>
+      <div class="section_container">
+        <div class="icon"><a href="https://www.instagram.com/_minknqoc476_" ><i class='bx bxl-instagram bx-lg'></i></a></div>
+        <div class="text"><p></p>Instagram</div>
+      </div>
     </div>
     
 
@@ -99,6 +123,8 @@ function closeNav() {
   document.getElementById("mySidebar").style.display = "none";
 }
 </script>
+
+<script src="https://kit.fontawesome.com/453319880c.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
